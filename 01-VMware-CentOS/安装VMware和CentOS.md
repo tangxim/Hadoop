@@ -34,4 +34,4 @@ XP最小配置为处理器数量1 核心数量2；win7最小为2 2。<br>
 http://mirrors.163.com/centos/7/isos/x86_64/CentOS-7-x86_64-DVD-1708.iso<br>
 **安装**<br>
 点击tangximan虚拟机 -> CD\DVD(IDE) -> 使用ISO映像文件
-![安装2-12](https://github.com/tangxim/Linux-VMware-CentOS-/blob/master/01-VMware-CentOS/2-12.png)<br>
+
