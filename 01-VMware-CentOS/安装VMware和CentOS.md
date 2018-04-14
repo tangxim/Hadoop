@@ -11,3 +11,4 @@ https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html<
 ![安装2-1](https://github.com/tangxim/Linux-VMware-CentOS-/blob/master/01-VMware-CentOS/2-1.png)<br>
 ![安装2-2](https://github.com/tangxim/Linux-VMware-CentOS-/blob/master/01-VMware-CentOS/2-2.png)<br>
 无脑下一步，安装<br>
+许可证 -> 密钥 CG54H-D8D0H-H8DHY-C6X7X-N2KG6
