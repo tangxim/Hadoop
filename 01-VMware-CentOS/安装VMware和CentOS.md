@@ -33,5 +33,22 @@ XP最小配置为处理器数量1 核心数量2；win7最小为2 2。<br>
 **下载CentOS7**<br>
 http://mirrors.163.com/centos/7/isos/x86_64/CentOS-7-x86_64-DVD-1708.iso<br>
 **安装**<br>
-点击tangximan虚拟机 -> CD\DVD(IDE) -> 使用ISO映像文件
-
+点击tangximan虚拟机 -> CD\DVD(IDE) -> 使用ISO映像文件<br>
+![安装2-12](https://github.com/tangxim/Linux-VMware-CentOS-/blob/master/01-VMware-CentOS/2-12.png)<br>
+确定
+**等待安装**<br>
+![安装2-13](https://github.com/tangxim/Linux-VMware-CentOS-/blob/master/01-VMware-CentOS/2-13.png)<br>
+![安装2-14](https://github.com/tangxim/Linux-VMware-CentOS-/blob/master/01-VMware-CentOS/2-14.png)<br>
+安装成功
+**其他设定**<br>
+语言支持【简体中文】<br>
+![安装2-15](https://github.com/tangxim/Linux-VMware-CentOS-/blob/master/01-VMware-CentOS/2-15.png)<br>
+软件选择【GNOME桌面】<br>
+安装位置【自动分区】<br>
+![安装2-16](https://github.com/tangxim/Linux-VMware-CentOS-/blob/master/01-VMware-CentOS/2-16.png)<br>
+ROOT密码及创建用户<br>
+![安装2-17](https://github.com/tangxim/Linux-VMware-CentOS-/blob/master/01-VMware-CentOS/2-17.png)<br>
+重启<br>
+勾选许可证设置网络及主机名<br>
+![安装2-18](https://github.com/tangxim/Linux-VMware-CentOS-/blob/master/01-VMware-CentOS/2-18.png)<br>
+创建设置虚拟机成功。<br>
