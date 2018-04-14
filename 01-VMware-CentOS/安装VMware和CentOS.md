@@ -14,6 +14,16 @@ https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html<
 许可证 -> 密钥 CG54H-D8D0H-H8DHY-C6X7X-N2KG6
 **创建虚拟机**
 新建虚拟机 -> 自定义 -> 稍后安装操作系统 -> 客户机操作系统Linux，版本CentOS 7 -> 处理器数量1，核心数量2 -> 虚拟机内存1G -> 下一步直到完成<br>
-*注：<br>
+***注：<br>
 处理器数量 ：是指CPU核数（例如：单核/双核），并不是指CPU颗数。
-每个处理的核心数量：是指CPU中的线程，并不是指核心（Core）。*
+每个处理的核心数量：是指CPU中的线程，并不是指核心（Core）。***
+![安装2-3](https://github.com/tangxim/Linux-VMware-CentOS-/blob/master/01-VMware-CentOS/2-3.png)<br>
+![安装2-4](https://github.com/tangxim/Linux-VMware-CentOS-/blob/master/01-VMware-CentOS/2-4.png)<br>
+![安装2-5](https://github.com/tangxim/Linux-VMware-CentOS-/blob/master/01-VMware-CentOS/2-5.png)<br>
+![安装2-6](https://github.com/tangxim/Linux-VMware-CentOS-/blob/master/01-VMware-CentOS/2-6.png)<br>
+![安装2-7](https://github.com/tangxim/Linux-VMware-CentOS-/blob/master/01-VMware-CentOS/2-7.png)<br>
+![安装2-8](https://github.com/tangxim/Linux-VMware-CentOS-/blob/master/01-VMware-CentOS/2-8.png)<br>
+我的计算机为4核<br>
+![安装2-9](https://github.com/tangxim/Linux-VMware-CentOS-/blob/master/01-VMware-CentOS/2-9.png)<br>
+![安装2-10](https://github.com/tangxim/Linux-VMware-CentOS-/blob/master/01-VMware-CentOS/2-10.png)<br>
+![安装2-11](https://github.com/tangxim/Linux-VMware-CentOS-/blob/master/01-VMware-CentOS/2-11.png)<br>
