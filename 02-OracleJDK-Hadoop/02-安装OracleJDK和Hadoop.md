@@ -3,17 +3,17 @@
 **用XShell5将Windows上的文件传送到Linux上**<br>
 * 下载XShell5 地址：https://www.netsarang.com/download/down_form.html?code=522<br>
 * 虚拟机ip地址查询命令：ip addr<br>
-![ip addr]()
+![ip addr](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/1-01.png)
 * 新建连接<br>
  * 主机地址为虚拟机地址，端口号默认22<br>
- ![新建连接]()
+ ![新建连接](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/1-02.png)
  * 用户身份验证<br>
  设置用户名和密码，最好不用root当用户名。<br>
  * 上传文件<br>
- ![命令rz]()<br>
+ ![命令rz](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/1-03.png)<br>
  在XShell5命令窗口输入命令rz，上传文件<br>
- ![上传中]()<br>
- ![上传成功]()<br>
+ ![上传中](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/1-04.png)<br>
+ ![上传成功](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/1-05.png)<br>
  命令：sz{文件}   可以下载文件<br>
 ## 2 安装Oracle JDK
 **两台虚拟机安装JDK并配置JAVA_HOME**<br>
