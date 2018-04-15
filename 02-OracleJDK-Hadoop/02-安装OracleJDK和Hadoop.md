@@ -1,6 +1,6 @@
 # 安装OracleJDK和Hadoop
 ## 1 安装Oracle JDK
-**两台虚拟机安装JDK并配置JAVA_HOME**
+**两台虚拟机安装JDK并配置JAVA_HOME**<br>
 下载jdk rmp包 地址：http://www.oracle.com/technetwork/java/javase/downloads/index.html
 ## 2 建立信任关系
 ## 3 安装Hadoop-3.1.0
