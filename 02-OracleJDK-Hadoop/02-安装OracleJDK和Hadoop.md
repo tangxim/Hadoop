@@ -4,7 +4,7 @@
 下载jdk rmp包 地址：http://www.oracle.com/technetwork/java/javase/downloads/index.html
 ## 2 建立信任关系
 ## 3 安装Hadoop-3.1.0
-官网下载二进制：http://mirrors.tuna.tsinghua.edu.cn/apache/hadoop/common/hadoop-3.1.0/hadoop-3.1.0.tar.gz
+下载3.1.0 binary包：http://hadoop.apache.org/releases.html
 
 ***参考：<br>
 Centos7安装Hadoop2.8步骤：https://blog.csdn.net/zzpzheng/article/details/73614526<br>
