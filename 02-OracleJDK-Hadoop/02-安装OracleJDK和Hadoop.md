@@ -31,7 +31,7 @@
  ![export](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/1-10.png)<br>
  ![source](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/1-09.png)<br>
 ***输入  :wq  保存配置并敲  回车  退回终端。***<br>
-PS：一直在纠结要不要装jre，查了下，说jdk就包含了jre，所以就不用安装啦。
+PS：一直在纠结要不要装jre，查了下，说jdk就包含了jre，所以就不用安装啦。<br>
 **检查JDK是否配置完成**<br>
  ![检查JDK](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/1-11.png)<br>
 ## 3 关闭防火墙
@@ -40,8 +40,8 @@ PS：一直在纠结要不要装jre，查了下，说jdk就包含了jre，所以
 * 关闭防火墙：systemctl stop firewalld<br>
 * 设置开机禁用防火墙：systemctl disable firewalld.service<br>
  ![关闭防火墙](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/2-02.png)<br>
-## 3 建立信任关系
-## 4 安装Hadoop-3.1.0
+## 4 建立信任关系
+## 5 安装Hadoop-3.1.0
 下载3.1.0 binary包：http://hadoop.apache.org/releases.html
 
 ***参考：<br>
