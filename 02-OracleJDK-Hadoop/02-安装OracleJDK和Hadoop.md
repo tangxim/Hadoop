@@ -30,7 +30,10 @@
  ![vim](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/1-08.png)<br>
  ![export](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/1-10.png)<br>
  ![source](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/1-09.png)<br>
-***输入  :wq  保存配置并敲  回车  退回shell界面。***<br>
+***输入  :wq  保存配置并敲  回车  退回终端。***<br>
+PS：一直在纠结要不要装jre，查了下，说jdk就包含了jre，所以就不用安装啦。
+**检查JDK是否配置完成**<br>
+ ![检查JDK](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/1-11.png)<br>
 ## 3 关闭防火墙
 * 查看防火墙状态：systemctl status firewalld<br>
  ![查看防火墙状态](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/2-01.png)<br>
