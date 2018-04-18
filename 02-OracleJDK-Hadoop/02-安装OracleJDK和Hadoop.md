@@ -27,6 +27,12 @@
  ![检查jdk版本](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/1-07.png)<br>
 **配置JAVA_HOME**<br>
 * <br>
+## 3 关闭防火墙
+* 查看防火墙状态：systemctl status firewalld<br>
+ ![查看防火墙状态](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/2-01.png)<br>
+* 关闭防火墙：systemctl stop firewalld<br>
+* 设置开机禁用防火墙：systemctl disable firewalld.service<br>
+ ![关闭防火墙](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/2-02.png)<br>
 ## 3 建立信任关系
 ## 4 安装Hadoop-3.1.0
 下载3.1.0 binary包：http://hadoop.apache.org/releases.html
