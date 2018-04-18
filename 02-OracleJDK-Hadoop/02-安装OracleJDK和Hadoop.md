@@ -26,7 +26,11 @@
 * 最后用java -version检查是否安装成功<br>
  ![检查jdk版本](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/1-07.png)<br>
 **配置JAVA_HOME**<br>
-* <br>
+* 如图输入命令配置JAVA_HOME<br>
+ ![vim](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/1-08.png)<br>
+ ![export](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/1-10.png)<br>
+ ![source](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/1-09.png)<br>
+***输入  :wq  保存配置并敲  回车  退回shell界面。***<br>
 ## 3 关闭防火墙
 * 查看防火墙状态：systemctl status firewalld<br>
  ![查看防火墙状态](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/2-01.png)<br>
