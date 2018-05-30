@@ -146,7 +146,9 @@ Centos7安装Hadoop2.8步骤：https://blog.csdn.net/zzpzheng/article/details/73
 ssh-keygen删除旧密钥:https://blog.csdn.net/ivnetware/article/details/52490713<br>
 SSH 出现 The authenticity of host xxx can't be established. 什么意思？:https://segmentfault.com/q/1010000006670515<br>
 创建你的第一个Shell脚本:https://blog.csdn.net/shuaiby/article/details/46776033<br>
-Linux中vi编辑器的使用详解:https://jingyan.baidu.com/article/59703552e2e1e38fc107405a.html
-《OD学hadoop》在LINUX下如何将tar压缩文件解压到指定的目录下：https://www.cnblogs.com/yeahwell/p/5623502.html
-linux怎么将一个文件移动到另一个目录下：https://blog.csdn.net/u010579482/article/details/72081996***<br>
+Linux中vi编辑器的使用详解:https://jingyan.baidu.com/article/59703552e2e1e38fc107405a.html<br>
+《OD学hadoop》在LINUX下如何将tar压缩文件解压到指定的目录下：https://www.cnblogs.com/yeahwell/p/5623502.html<br>
+linux怎么将一个文件移动到另一个目录下：https://blog.csdn.net/u010579482/article/details/72081996
+Hadoop3.0 安装配置:https://www.linuxidc.com/Linux/2016-10/136166.htm<br>
+hadoop2.7【单节点】单机、伪分布、分布式安装指导:https://www.cnblogs.com/yunkaifa/p/4470422.html***<br>
 
