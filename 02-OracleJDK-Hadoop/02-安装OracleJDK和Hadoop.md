@@ -97,8 +97,48 @@ PS：一直在纠结要不要装jre，查了下，说jdk就包含了jre，所以
  ![hosts文件内容](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/3-19.png)<br>
  就此完成了服务器的基础配置。<br>
 ## 5 安装Hadoop-3.1.0
-下载3.1.0 binary包：http://hadoop.apache.org/releases.html
-
+* 下载3.1.0 binary包：http://hadoop.apache.org/releases.html<br>
+* 解压<br>
+ 将安装包上传到机器。解压到/opt/hadoop目录下。<br>
+ ![解压](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/4-01.png)<br>
+ 将hadoop-3.1.0目录下的所有文件移动到上级目录<br>
+ ![移动](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/4-02.png)<br>
+ 删除hadoop-3.1.0目录<br>
+ ![删除](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/4-03.png)<br>
+* 配置hadoop<br>
+ * 编辑/opt/hadoop/etc/hadoop/core-site.xml，在<configuration>节点中增加如下内容：<br>
+ ![编辑core-site.xml](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/4-04.png)<br>
+ ![core-site.xml内容](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/4-05.png)<br>
+ * 编辑/opt/hadoop/etc/hadoop/hadoop-env.sh，将export JAVA_HOME=${JAVA_HOME}中的${JAVA_HOME}改成jdk安装路径。<br>
+ ![编辑hadoop-env.sh](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/4-06.png)<br>
+ ![hadoop-env.sh内容](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/4-07.png)<br>
+ * 编辑/opt/hadoop/etc/hadoop/hdfs-site.xml，在<configuration>节点中增加如下内容：<br>
+ ![编辑hdfs-site.xml](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/4-08.png)<br>
+ ![hdfs-site.xml内容](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/4-09.png)<br>
+ 
+ *注：<br>
+ *dfs.replication的value要设为1<br>
+ *dfs.permissions如果配置成true，则对dfs上的文件进行读写时，就需要检查权限。会更安全。如果该参数不配，则默认为校验权限。<br>
+ 
+ * 编辑文件etc/hadoop/mapred-site.xml，添加下面内容由于etc/hadoop中没有mapred-site.xml，所以对mapred-queues.xml.template复制一份。<br>
+ ![复制一份mapred-site.xml](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/4-10.png)<br>
+ ![编辑mapred-site.xml](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/4-11.png)<br>
+ ![mapred-site.xml内容](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/4-12.png)<br>
+ * 编辑/opt/hadoop/etc/hadoop/slaves文件，删除缺省的localhost，将两个slave机器的hostname添加到其中。<br>
+ ![编辑slaves](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/4-13.png)<br>
+ ![slaves内容](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/4-14.png)<br>
+ * 编辑/opt/hadoop/etc/hadoop/yarn-site.xml文件，在<configuration>节点上增加如下内容。<br>
+ ![编辑yarn-site.xml](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/4-15.png)<br>
+ ![yarn-site.xml内容1](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/4-16.png)<br>
+ ![yarn-site.xml内容2](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/4-17.png)<br>
+ ![yarn-site.xml内容3](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/4-18.png)<br>
+ * 启动hadoop<br>
+ 根据上面的配置，我们将txm-master配置成了master，即namenode。那么只需要在该节点启动即可。<br>
+ 进入/opt/hadoop/bin，执行./hadoop namenode -format命令初始化该节点。<br>
+ ![启动hadoop](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/4-19.png)<br>
+ ![hadoop成功](https://github.com/tangxim/Hadoop/blob/master/02-OracleJDK-Hadoop/4-20.png)<br>
+ 
+ 
 ***参考：<br>
 Centos7安装Hadoop2.8步骤：https://blog.csdn.net/zzpzheng/article/details/73614526<br>
 史上最详细的Hadoop环境搭建：https://blog.csdn.net/hliq5399/article/details/78193113<br>
@@ -106,5 +146,7 @@ Centos7安装Hadoop2.8步骤：https://blog.csdn.net/zzpzheng/article/details/73
 ssh-keygen删除旧密钥:https://blog.csdn.net/ivnetware/article/details/52490713<br>
 SSH 出现 The authenticity of host xxx can't be established. 什么意思？:https://segmentfault.com/q/1010000006670515<br>
 创建你的第一个Shell脚本:https://blog.csdn.net/shuaiby/article/details/46776033<br>
-Linux中vi编辑器的使用详解:https://jingyan.baidu.com/article/59703552e2e1e38fc107405a.html***<br>
+Linux中vi编辑器的使用详解:https://jingyan.baidu.com/article/59703552e2e1e38fc107405a.html
+《OD学hadoop》在LINUX下如何将tar压缩文件解压到指定的目录下：https://www.cnblogs.com/yeahwell/p/5623502.html
+linux怎么将一个文件移动到另一个目录下：https://blog.csdn.net/u010579482/article/details/72081996***<br>
 
